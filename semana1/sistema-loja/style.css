@@ -1,0 +1,56 @@
+body{
+    background: url(./img/Background_bubbles.jpg);
+    background-color white-space;
+}
+
+
+p{
+    color:greenyellow;
+    font-size: 30px;
+}
+
+div > a{
+    color:black;
+    font-size: 30px;
+    margin-left: 130px;
+    
+}
+
+.redesocial{
+    width: 5%;
+    height: auto;
+
+}
+
+.navlink{
+    background-color:white;
+    text-align: center;
+
+            
+}
+
+div > h1{
+    font-size: 50px;
+    text-align: center;
+    margin-right: 10px;
+
+}
+.Logo_coca{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.conteudo{
+    height: 80vh;
+    
+}
+
+ul > li{
+    font-size: 30px;
+    color: greenyellow;
+}
+header{
+    background-color:grey;
+    
+}
