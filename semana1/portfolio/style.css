@@ -1,5 +1,5 @@
 header{
-    background-color: rosybrown;
+    background-color:green;
     font-size: 30px;
     height: 60px;
     margin: 0px;
@@ -10,6 +10,7 @@ header{
 #paragrafo{
     margin-top : 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black
     ;
 }
 
@@ -17,7 +18,7 @@ header{
 #cabeca{
     width: 100%;
     height: auto;
-    background: green;
+    background:#1EB051;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,7 +31,7 @@ header{
 .link_a{
     width: 8%;
     height: 30px;
-    background: saddlebrown;
+    background: rgb(61, 87, 74);
     margin: 10px;
     text-align: center;
     margin-left: 150px;
@@ -41,22 +42,21 @@ header{
 }
 
 a{
-    color: grey;
+    color:black;
 }
 
 
 div img{
     width: 30%;
-    
+    border-radius: 30%;
+        
 }
 
 
-
-
 #foto {
-    background-color: yellow;
+    background-color:#B8D4BA;
     text-align: center;
-    
+        
 }
 
 #nome {
@@ -68,7 +68,8 @@ div img{
 
 #sobre{
     
-    background-color: teal;
+    background-color #99A199;
+    margin-bottom: 0px;
     
 }
 
@@ -78,14 +79,55 @@ div img{
 }
 
 #lista{
-    background-color: violet;
+    margin-top: -15px;
+    background-color: #46D44D;
+    font-size: 20px;
+    
+}
+
+#lista2{
+    font-weight: bold;
+    margin-top: 0px;
+    
 }
 
 #formulario{
     background-color: pink;
+    
 }
 
 #rodape{
     background-color: red;
+    text-align: center;
+    
+}
+
+.Topo{
+    font-size: 20px;    
+    
+}
+
+#habilidades{
+    font-style: italic;
+}
+
+#Digite{
+    height: 30px;
+    
+}
+
+.rede{
+    width: 5%;
+    height: auto;
+
+}
+
+button:hover{
+    color:green;
+}
+
+.Nome_form{
+    display: inline;
+    
 }
 
