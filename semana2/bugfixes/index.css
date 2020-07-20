@@ -160,4 +160,10 @@ button:hover{
 button:active{
     background-color: green;
 }
+input{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    background: transparent;
+}
 
