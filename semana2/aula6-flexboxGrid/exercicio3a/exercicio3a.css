@@ -5,32 +5,70 @@ body {
     margin: 0;
     font-size: 10px;
     color: white;
+
 }
 
 .green-background {
     background-color: green;
+    width: 20vw;
+    height: 5vh;
+    
 }
 
 .yellow-background {
     background-color: yellow;
+    width: 80vw;
+    height: 5vh;
 }
 
 .pink-background {
     background-color: fuchsia;
+    height: 50vh;
 }
 
 .blue-background {
     background-color: blue;
+    width: 50vw;
+    height: 20vh;
+    order: 3;
 }
+
+
 
 .red-background {
     background-color: red;
+    width: 25vw;
+    height: 10vh;
+    
+
 }
 
 .lightgreen-background {
     background-color: lightgreen;
+    width: 25vw;
+    height: 10vh;
+
 }
 
 .purple-background {
     background-color: purple;
+    height: 5vh;
+
+}
+
+#top-container{
+    display: flex;
+    justify-items: center;
+}
+
+#middle-container {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    
+    ;
+}
+div{
+    
 }
