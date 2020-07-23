@@ -1,0 +1,186 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#main-container{
+    justify-content: center;
+    align-content: center;
+}
+
+#first-block {
+    background-color: red;
+    height: 10vh;
+    border: 0px;
+    
+}
+
+.blue-block {
+    background-color: blue;
+    width: 30vw;
+    height: 15vh;
+    margin: 1vw 1vh;
+    border: 1px solid black;
+}
+
+.yellow-block {
+    background-color: yellow;
+    width: 30vw;
+    height: 15vh;
+    margin: 1vw 1vh;
+    border: 1px solid black;
+}
+
+.green-block {
+    background-color: green;
+    width: 30vw;
+    height: 15vh;
+    margin: 1vw 1vh;
+    border: 1px solid black;
+    
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    width: 43vw;
+    height: 43vw;
+    margin: 2vw 2vh;
+    border: 1px solid black;
+    padding: 22px;
+}
+
+.white-block {
+    background-color: white;
+    width: 30vw;
+    height: 15vh;
+    margin: 1vw 1vh;
+    border: 1px solid black;
+}
+
+#caixa1{
+    display: flex;
+    flex-direction: row;   
+    padding: 22px;
+    justify-content: center;
+}
+
+#caixa2{
+    display: flex;
+    flex-direction: row;   
+    padding: 22px;
+    justify-content: center;
+}
+
+#caixa3{
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+    justify-content: center;
+}
+
+#caixa4{
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width : 700px) {
+    .blue-block{
+        width: 90vw;
+    }
+    .yellow-block{
+        width: 90vw;
+    }
+    .green-block{
+        width: 90vw;
+    }
+    .black-block{
+        width: 90vw;
+        height: 15vh;
+    }
+    .white-block{
+        width: 90vw;
+    }
+    
+    #caixa1{
+        display: flex;
+        flex-direction: column;
+    }
+    #caixa2{
+        display: flex;
+        flex-direction: column;
+    }
+    #caixa3{
+        display: flex;
+        flex-direction: column;
+    }
+    #caixa4{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+}
+
+
+
+@media screen and (min-width : 700px) and (max-width : 1200px) {
+    #caixa1{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    #caixa2{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+    .yellow-block{
+        width: 45vw;
+        
+        
+    }
+    .blue-block{
+        width: 45vw;
+        
+    }
+
+    .green-block{
+        width: 90vw;
+        
+    }
+
+    #caixa4{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #white-block-9{
+        width: 45vw;
+        
+    }
+    #white-block-10{
+        width: 45vw;
+    }
+    #white-block-11{
+        width: 90vw;
+    }
+
+    
+
+}
+
+
+
+@media screen and (min-width : 1200px) {
+    
+}
