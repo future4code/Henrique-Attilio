@@ -1,0 +1,53 @@
+.topo{
+    height: 8vh;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.busca{
+    border: 0;
+    height: 25px;
+}
+h3{
+    margin-left: 20px;
+}
+
+    
+.menu{
+    
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+div  img{
+    width: 280px;
+    height: 180px;
+}
+.container{
+    border: 1px solid black;
+    width: 280px ;
+    height: 240px;
+    margin: 10px;
+    
+    }
+.video{
+    display: block;
+    margin: 0 auto;
+    width: 640px;
+    height: 480px;
+    
+}
+footer{
+    background-color: gray;
+    height: 40px;
+    
+}
+h4{
+    padding: 10px;
+}
