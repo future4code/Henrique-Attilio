@@ -8,26 +8,7 @@ export default class App extends React.Component{
     paginaAtual: "Cadcliente"
   };
 
-  // pegarTodosUsuarios = () => {
-  //   const requisicao = axios.get(
-  //     "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-  //     {
-  //       headers:{
-  //         Authorizarion: "henrique-attilio-jackson"
-  //       }
-  //     }
-  //   );
-
-  //   request
-  //     .then((anwser) => {
-  //       this.setState({nomeCad: anwser.data.result.name});
-  //       this.setState({idCad: anwser.data.result.id});
-  //     })
-  //     .catch((errorRet) => {
-  //     console.log("Ocorreu um erro de conexao");
-  //     });
-  //   };
-
+  
   // pegarUsuariosPeloId = () => {
   //   const requisicaoid = axios.get(
   //     "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/:id",

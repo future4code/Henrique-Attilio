@@ -42,11 +42,10 @@ class Cadcliente extends React.Component{
           Authorization: 'henrique-attilio-jackson'
         }
       }).then(anwserCreate => {
-          console.log(anwserCreate)
-            // alert(`O cliente ${this.state.nomeValor} foi criado no cadastro`)
+            alert(`O cliente ${this.state.nomeValor} foi criado no cadastro`)
+            this.setState({nomeValor: "", emailValor: ""})
       }).catch(erro => {
-        //   console.log(erro)
-          console.log(erro.mensage)
+            alert(erro.mensage)
       })
     }
   
