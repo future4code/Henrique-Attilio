@@ -1,98 +1,88 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import axios from "axios";
+import Cadcliente from '../src/components/Cadcliente';
+import Listacliente from '../src/components/Listacliente';
 
 export default class App extends React.Component{
   state = {
-    idCad: [],
-    nomeCad: [],
-    emailCad: ""
+    paginaAtual: "Cadcliente"
   };
 
-  pegarTodosUsuarios = () => {
-    const requisicao = axios.get(
-      "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-      {
-        headers:{
-          Authorizarion: "henrique-attilio-jackson"
-        }
-      }
-    );
+  
+  // pegarUsuariosPeloId = () => {
+  //   const requisicaoid = axios.get(
+  //     "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/:id",
+  //     {
+  //       headers:{
+  //         Authorizarion: "henrique-attilio-jackson"
+  //       }
+  //     }
+  //   );
 
-    request
-      .then((anwser) => {
-        this.setState({nomeCad: anwser.data.result.name});
-        this.setState({idCad: anwser.data.result.id});
-      })
-      .catch((errorRet) => {
-      console.log("Ocorreu um erro de conexao");
-      });
-    };
+    
+  //     .then((anwserId) => {
+  //       this.setState({nomeCad: anwserId.data.result.name});
+  //       this.setState({idCad: anwserId.data.result.id});
+  //       this.setState({emailCad: anwserId.data.result.email});
+  //       })
+  //       .catch((errorId) => {
+  //         console.log("Ocorreu um erro de conexao ID")
+  //       });
+  //   };
 
-  pegarUsuariosPeloId = () => {
-    const requisicaoid = axios.get(
-      "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/:id",
-      {
-        headers:{
-          Authorizarion: "henrique-attilio-jackson"
-        }
-      }
-    );
+  // procurarUsuarios = () => {
+  //   const usuariosSearch = axios.get(
+  //     "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/search?name=&email=",
+  //     {
+  //       headers:{
+  //         Authorizarion: "henrique-attilio-jackson"
+  //       }
+  //     }
+  //   );
 
-    request
-      .then((anwserId) => {
-        this.setState({nomeCad: anwserId.data.result.name});
-        this.setState({idCad: anwserId.data.result.id});
-        this.setState({emailCad: anwserId.data.result.email});
-        })
-        .catch((errorId) => {
-          console.log("Ocorreu um erro de conexao ID")
-        });
-    };
+    
+  //     .then((anwserUser) => {
+  //       this.setState({nomeCad: anwserUser.data.result.name});
+  //       this.setState({idCad: anwserUser.data.result.id});
+  //       })
+  //       .catch((errorUser) => {
+  //         console.log("Ocorreu um erro de conexao USUARIO")
+  //       });
+  // }
 
-  procurarUsuarios = () => {
-    const usuariosSearch = axios.get(
-      "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/search?name=&email=",
-      {
-        headers:{
-          Authorizarion: "henrique-attilio-jackson"
-        }
-      }
-    );
+  
 
-    request
-      .then((anwserUser) => {
-        this.setState({nomeCad: anwserUser.data.result.name});
-        this.setState({idCad: anwserUser.data.result.id});
-        })
-        .catch((errorUser) => {
-          console.log("Ocorreu um erro de conexao USUARIO")
-        });
+  mudarPagina = () => {
+    if (this.state.paginaAtual === "Cadcliente"){
+      this.setState({paginaAtual: "Listacliente" })
+    }
+    else if(this.state.paginaAtual === "Listacliente"){
+      this.setState({paginaAtual: "Cadcliente"})
+    }
   }
 
-  criarUsuario = () => {
-    const corpo = {
-      nome: this.state.nomeCad
-    };
 
-    const requisicaoIdUser = axios.post(
-      "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-      body,
-      {
-        headers: {
-          Authorizarion: "henrique-attilio-jackson"
-        }
-      }
-    );
 
-    request
-      .then((anwserCreate) => {
-        alert(`O cliente ${this.state.nomeCad} foi criado no cadastro`)
-        
-      }
-      ) 
-  }
+    render (){
+const pagAtual = () => {
+    if (this.state.paginaAtual === "Cadcliente"){
+      return <Cadcliente/>
+    }else if(this.state.paginaAtual === "Listacliente"){
+      return <Listacliente/>
+    }
+}
+
+      return(
+        <div>
+          {pagAtual()}
+           <button onClick={this.mudarPagina} > Trocar de Pagina </button> 
+        </div>
+
+
+      );
+
+    }
+  
 
 
 
