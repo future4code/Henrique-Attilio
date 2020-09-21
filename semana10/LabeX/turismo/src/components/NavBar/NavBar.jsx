@@ -23,7 +23,7 @@ const NavBar = () => {
 
      return (
     <div>
-         <p> Teste NavBar  </p>
+         <p> Barra de Navegacao  </p>
             <button onClick={vaiParaHome}> Vai para a pagina</button>
             <button onClick={vaiListadeViagens}> Vai para a Lista de Viagens</button>
             <button onClick={vaiCriarViagem}> Vai criar viagem</button>
