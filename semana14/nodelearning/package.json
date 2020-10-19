@@ -1,0 +1,11 @@
+{
+  "name": "aula-node",
+  "version": "1.0.0",
+  "description": "apreendendo a mexer",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Henrique Attilio",
+  "license": "ISC"
+}
