@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ScreenTela from '../ScreenTela/ScreenTela'
 import { CorpoEstilizado } from './styled'
 
+
 const GroupScreen  = () => {
+
+
+
+
+
+
+
     return(
         <CorpoEstilizado>
             <ScreenTela semana="Domingo"/>

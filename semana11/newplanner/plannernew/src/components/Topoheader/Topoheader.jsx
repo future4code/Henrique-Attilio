@@ -44,13 +44,13 @@ const Topoheader = () => {
                 <input type="text" placeholder="task" id="tarefa" onChange={funcPegaTarefa} value={text} />
             
                 <select name="dias-semana" id="dias-semana" onChange={funcPegarSemana} value={day}>
-                    <option value="domingo">Domingo</option>
-                    <option value="segunda">Segunda-feira</option>
-                    <option value="terca">Terça-feira</option>
-                    <option value="quarta">Quarta-feira</option>
-                    <option value="quinta">Quinta-feira</option>
-                    <option value="sexta">Sexta-feira</option>
-                    <option value="sabado">Sábado</option>
+                    <option value="Domingo">Domingo</option>
+                    <option value="Segunda">Segunda-feira</option>
+                    <option value="Terca">Terça-feira</option>
+                    <option value="Quarta">Quarta-feira</option>
+                    <option value="Quinta">Quinta-feira</option>
+                    <option value="Sexta">Sexta-feira</option>
+                    <option value="Sabado">Sábado</option>
                 </select>
                     <button id="botao" onClick={chamadaBotao}>Criar Tarefa</button>
             </div>
