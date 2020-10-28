@@ -4,7 +4,10 @@
   "description": "apreendendo a mexer",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js",
+    "start-hba": "node index.js Henrique 35"
+    
   },
   "author": "Henrique Attilio",
   "license": "ISC"
