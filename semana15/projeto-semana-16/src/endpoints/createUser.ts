@@ -1,4 +1,5 @@
 import { Request, Response} from "express";
+import insertUser from "../data/insertUser";
 
 export default async function createUser(
     req:Request,
@@ -24,12 +25,10 @@ export default async function createUser(
                 req.body.email
 
             )
-
-        //consultar o banco de dados 
-
-        //validar saidas do banco
-
-        //responder a requisicao
+            res
+                .status(200)
+                .send('Usuario criado com Sucesso!')
+        
 
     } catch (error) {
         res.status(400).send({
