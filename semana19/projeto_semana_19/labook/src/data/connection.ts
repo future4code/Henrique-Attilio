@@ -1,4 +1,8 @@
 import Knex from 'knex'
+import dotenv from "dotenv"
+
+
+dotenv.config()
 
 export const connection: Knex = Knex({
     client: "mysql",

@@ -1,12 +1,10 @@
 import express, { Express } from "express"
 import cors from "cors"
-import dotenv from "dotenv"
 import signUpUser from './controller/user/signUpUser'
 import login from './controller/user/login'
 import createPost from './controller/user/createPost'
 import searchPostById from './controller/user/searchPostById'
 
-dotenv.config()
 
 const app: Express = express()
 app.use(express.json())
