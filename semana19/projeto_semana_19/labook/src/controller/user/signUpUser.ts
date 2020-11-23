@@ -13,7 +13,7 @@ export default async function signUpUser (
      
            if (!name || !email || !password) {
               res.statusCode = 406
-              message = '"name", "email" and "password" must be provided'
+              message = '"name", "email" and "password" must beeee provided'
               throw new Error(message)
            }
      
@@ -31,11 +31,11 @@ export default async function signUpUser (
      
            const token: string = generateToken({ id })
      
-           res.status(201).send({ message, token })
+           res.status(201).send({ message , token })
      
         } catch (error) {
            res.statusCode = 400
-           let message = error.sqlMessage || error.message
+           let message = error.sqlMessage || error.message || "ola jose"
      
            res.send({ message })
         }
